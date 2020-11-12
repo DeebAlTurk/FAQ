@@ -1,0 +1,137 @@
+
+span{
+    margin-top: 25px;
+}
+body {
+    background: rgb(100,98,231) ;
+    background: -moz-linear-gradient(95deg, rgba(100,98,231,1) 0%, rgba(175,104,234,1) 100%);
+    background: -webkit-linear-gradient(95deg, rgba(100,98,231,1) 0%, rgba(175,104,234,1) 100%);
+    background: linear-gradient(95deg, rgba(100,98,231,1) 0%, rgba(175,104,234,1) 120%);
+    font-family: Arial;
+}
+.main-wrapper{
+    position: absolute;
+    top: 15%;
+    left: 22%;
+
+}
+.FAQ-Box{
+    display: flex;
+    background-color: white;
+    width: 800px;
+    height: auto;
+    border-radius: 28px;
+    box-shadow: rgba(34, 33, 33, 0.50) 3px 10px 22px 2px;
+}
+.cols{
+    flex: 50%;
+}
+
+#questions >ul {
+    list-style: none;
+    padding: 0;
+}
+#questions >ul >li{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.icon{
+    margin-left: 113px;
+}
+h1 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+#questions hr{
+    height: 1px;
+    background-color: #dedddd;
+    border: none;
+    width: 95%;
+}
+.answer{
+    display: none;
+}
+#illustrations{
+    margin: 0;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-position: -285px -98px;
+    background-size: 599px;
+    background-repeat: no-repeat;
+}
+#box{
+    z-index: 3;
+    position: relative;
+    top: -95px;
+    left: -86px;
+}
+#woman{
+    z-index: 1;
+    position: relative;
+    left: -38px;
+    top: 97px;
+}
+@media screen and (max-width: 1200px){
+    body{
+        font-size: 240%;
+    }
+    .FAQ-Box{
+        display: block;
+        width: 100%;
+        height: auto;
+        padding-bottom: 40px;
+        border-radius: 60px;
+    }
+    .main-wrapper{
+        position: absolute;
+        top: 23%;
+        left: 11%;
+        width: 80%;
+        height: auto;
+
+    }
+    .cols{
+        flex: none;
+    }
+    h1{
+        text-align: center;
+    }
+    #illustrations{
+        display: block;
+        height: 240px;
+        background-position: 46px -280px;
+        background-size: 495px;
+    }
+    #box{
+        top: -438px;
+        left: 57px;
+    }
+    #woman{
+        left: 83px;
+        top: -267px;
+        width: 604px;
+    }
+
+    #questions >ul {
+        margin: 40px 20px 40px 50px;
+    }
+    #questions >ul >li{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .icon{
+        margin-left: 100px;
+        width: 30px;
+
+    }
+    h1 {
+        margin-top: 95px;
+        margin-bottom: 100px;
+    }
+    #questions hr{
+        height: 1px;
+        background-color: #dedddd;
+        border: none;
+        width: 95%;
+    }
+}
